@@ -1,0 +1,10 @@
+include README.md LICENSE CHANGELOG.md DESIGN.md quickstart.py
+include docs/study.md docs/release.md
+recursive-include tests *.py
+include tests/fixtures/mock_cycles.tar.gz
+recursive-include parity *.py
+recursive-include src/codercommittee *.md py.typed
+prune site
+exclude mkdocs.yml
+prune scripts
+global-exclude __pycache__ *.pyc .DS_Store

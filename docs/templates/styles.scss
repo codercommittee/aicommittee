@@ -1,0 +1,7 @@
+// Styles for the PDF build only (mkdocs-with-pdf appends this file to its own stylesheet).
+// The plugin gives every article and section a minimum height of one page. With that rule
+// WeasyPrint stops laying out the document part way through, so the rule is undone here.
+article,
+section + section {
+  min-height: 0;
+}
